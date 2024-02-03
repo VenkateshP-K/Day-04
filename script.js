@@ -1,18 +1,27 @@
-//1.Print Odd numbers in an Array
-var arr = [12,78,45,65];
+//1.Print Odd numbers in an array using anonymous function
+var obj = {}
+var res = function(arr){
 for(var i=0;i<arr.length;i++){
-    if(arr[i]%2 != 0){
-        console.log(arr[i])
-    }
+if(arr[i]%2 != 0){
+  obj[arr[i]] = "Odd"
 }
-
-
-//3.Sum of all numbers in an array
-var arr = [12,78,45,65];
-var sum = 0
-for (var i=0;i<arr.length;i++){
-    
-    var sum = (sum+arr[i])
-  
 }
-  console.log(sum);
+return obj
+}
+var result = res([23,45,12,64]);
+console.log(result);
+
+//Print Odd numbers in an array using IIFE function
+(var obj = {}
+  var res = function(arr){
+  for(var i=0;i<arr.length;i++){
+  if(arr[i]%2 != 0){
+    obj[arr[i]] = "Odd"
+  }
+  }
+  return obj
+  })
+  var result = res([23,45,12,64]);
+  console.log(result);
+
+  2.Convert all the strings to title caps in a string array
