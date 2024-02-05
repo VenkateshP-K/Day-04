@@ -64,7 +64,7 @@ console.log(result);
           (sum += arr[i])
       }
       return sum
-  })
+  }))
   var arr = ([12,34,23]);
   console.log(arr);
 
@@ -96,17 +96,17 @@ var prime = [];
 (function isPrime(item) {
     var identifier = item / 2;
       for (var j = 2; j <= identifier; j++) {
-       if ((item % j) == 0) { // modulous
+       if ((item % j) == 0) { 
         return false;
        } 
      }
      return true;
-}
-for (var index = 0; index < a.length; index++) {
+})
+ for(var index = 0; index < a.length; index++){
   if (isPrime(a[index])) {
       prime.push(a[index])
   }
-})
+}
 
 console.log(prime);
 
